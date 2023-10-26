@@ -25,6 +25,12 @@ const Handler = new DBD.Handler();
     ownerIDs: config.dbd.ownerIDs,
     useThemeMaintenance: true,
     useTheme404: true,
+    
+    guildAfterAuthorization: {
+        use: true,
+        guildId: config.guild.guildID
+    },
+
     bot: client,
     theme: SoftUI({
       storage: Handler,
@@ -41,6 +47,7 @@ const Handler = new DBD.Handler();
       websiteTitle: "LUFFY - imagine a free discord bot",
       dashboardURL: config.dbd.domain,
       colorScheme: "custom",
+      dbdriver: config.database.mongoose,
       themeColors: {
         primaryColor: "#374649",
         secondaryColor: "#009c6b",
@@ -147,3 +154,4 @@ const Handler = new DBD.Handler();
 })();
 
 console.log(`${config.dbd.domain}${config.dbd.redirectUri}`);
+

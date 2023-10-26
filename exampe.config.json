@@ -1,0 +1,25 @@
+{
+    "discord": {
+        "token": "",
+        "client": {
+            "id": "",
+            "secret": ""
+        }
+    },
+    "database": {
+        "mongoose": ""
+    },
+    "dbd": {
+        "port":80,
+        "domain": "http://localhost/",
+        "redirectUri": "/discord/callback",
+        "license": "",
+        "ownerIDs": ""
+
+    },
+
+    "guild": {
+        "guildID": ""
+    }  
+}
+
